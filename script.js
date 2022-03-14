@@ -1,5 +1,5 @@
 
-
+document.getElementById("buttonEL").addEventListener("click", getActivity)
 
 
 function getActivity(){
