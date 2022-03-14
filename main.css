@@ -1,3 +1,82 @@
-/* #JSONimg {
+/* takes content size, padding, and border into account when determing size of conetnt */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.9rem;
+}
+
+/* remove margins on typography to keep margins consistent */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+
+  /* gradient via https://coolors.co/gradients */
+  background: hsla(186, 33%, 94%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
+}
+
+.container {
+  margin: 3em auto;
   width: 300px;
-} */
+}
+
+#activityEL {
+  margin-top: 2em;
+}
+
+#buttonEL {
+  margin-top: 2em;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  border-color: #c80000;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+#buttonEL:hover,
+#buttonEL:focus {
+  transform: scale(1.1);
+  background-color: #db0000;
+}
+/* examples.html */
+
+#JSONimg {
+  width: 300px;
+}
