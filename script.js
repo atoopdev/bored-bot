@@ -7,7 +7,7 @@ function getActivity(){
     .then(response => response.json())
     .then(data =>{
         console.log(data)
-        document.getElementById("activityEL").textContent = data.activity
+        document.getElementById("activityEL").textContent =`⭐️ ${data.activity} ⭐️` 
     })
     render()
 }
@@ -15,5 +15,5 @@ function getActivity(){
 function render(){
     document.body.classList.remove("gray-bg")
     document.body.classList.add("blue-bg")
-    document.getElementById("titleEL").innerText = "⭐️ Activity Finder ⭐️"
+    document.getElementById("titleEL").innerText = "🎉 Activity Finder 💃 🎈"
 }
